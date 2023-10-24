@@ -1,0 +1,127 @@
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+h1 {
+  font-family: cursive;
+  margin-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.boxes {
+  align-items: center;
+  border: solid 1px white;
+  color: white;
+  display: flex;
+  font-size: 10vw;
+  justify-content: center;
+  max-width: 200px;
+  max-height: 200px;
+  width: 25vw;
+  height: 25vw;
+  transition: 200ms;
+}
+
+.boxes:hover {
+  background-color: rgb(26, 26, 26);
+  cursor: pointer;
+}
+
+.others-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.alerts {
+  border: solid 1px white;
+  display: none;
+  font-size: 24px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 2vw;
+}
+
+.scores-button-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.others-container button {
+  background: none;
+  border: solid 1px white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px 20px;
+  transition: 100ms;
+}
+
+.others-container button:hover {
+  background-color: white;
+  border: solid 1px white;
+  color: black;
+}
+
+.green {
+  color: rgb(1, 255, 1);
+}
+
+.red {
+  color: red;
+}
+
+@media (min-width: 800px) {
+  .boxes {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .buttons-container {
+    flex-direction: column;
+  }
+  .others-container button {
+    font-size: 5vw;
+  }
+  .alerts {
+    font-size: 5vw;
+  }
+}
